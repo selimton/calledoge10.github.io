@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="c-styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Calledo WPE Journal</div>
+            <div class="links">
+                <a href="ge10.html">Home</a>
+                <a href="Church.html">Church</a>
+                <a href="Culture.html">Culture</a>
+                <a href="Classroom.html">Classroom</a>
+                <a href="Court.html">Court</a>
+            </div>
+        </div>
+    </div>
+
+    <h1>Community</h1>
+    <section>
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/communityFolder/advocasiya.jpg" alt="Card Image" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">AdvocaSIYA: An Advocacy Fair
+                    </h3>
+                    <p class="short-description">Women's rights, bringing attention to gender equality and related issues</p>
+                    <button class="read-more-btn"
+                            data-full-text="
+                            I attended AdvocaSIYA: An Advocacy Fair from 1:00 PM to 5:00 PM, put on by the Silliman University Student Government, where I was a spectator. The focus was largely on women's rights, bringing attention to gender equality and related issues.
+                            ‎
+                            The atmosphere was charged with a sense of purpose, with booths specifically dedicated to women's advocacy. There were talks, and informational materials all centered around empowering women and addressing gender disparities.
+                            ‎
+                            I spent my time there listening to speakers, joining in discussions, and learning about initiatives aimed at supporting women's rights. It was eye-opening to see the commitment of fellow students to these causes.
+                            ‎
+                            Because of this activity, I am now more informed about women's rights issues.
+                            "
+                            data-popup-image="images/communityFolder/advocasiya_1">Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/communityFolder/vernon_1.jpg" alt="Card Image" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Vernon Hall Donation to Janitors
+
+                    </h3>
+                    <p class="short-description">A heartfelt gesture by the residents to show appreciation for the janitors who keep our living spaces clean and comfortable</p>
+                    <button class="read-more-btn"
+                            data-full-text="
+                            I participated in the donation of goods and money to the Vernon Hall Janitors. It was a heartfelt gesture by the residents to show appreciation for the janitors who keep our living spaces clean and comfortable.
+                            ‎
+                            The atmosphere was warm and appreciative, with everyone coming together to acknowledge the hard work of these unsung heroes. The donations included both money and useful items that could make the janitors' daily tasks easier or more pleasant.
+                            ‎
+                            I helped in handing out the gifts and was touched by the genuine gratitude expressed by the janitors. It was a simple yet profound moment of community and respect.
+                            ‎
+                            Because of this activity, I am now more mindful of the contributions of janitorial staff and feel a stronger sense of community at Vernon Hall. It's a reminder of how small acts of kindness can make a big difference in someone's day.
+                            "
+                            data-popup-image="images/communityFolder/vernon.jpg">Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/communityFolder/donateblood.jpg" alt="Card Image" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">DOST Blood Donation</h3>
+                    <p class="short-description">Knowing that my donation could help save lives made it a deeply rewarding experience</p>
+                    <button class="read-more-btn"
+                            data-full-text="
+                            I was the lead performer at the DOST Blood Donation event at 1:30 PM, organized by the Department of Science and Technology. My role was to donate blood, setting an example for others to follow.
+                            ‎
+                            The atmosphere was one of compassion and commitment, with everyone there to contribute to this life-saving cause. It felt good to be part of such a positive community effort.
+                            ‎
+                            Donating blood was a straightforward process, but knowing that my donation could help save lives made it a deeply rewarding experience. The staff were supportive, guiding us through each step, ensuring safety and comfort.
+                            ‎
+                            Because of this activity, I am now more aware of the importance of blood donation and feel a personal satisfaction in having contributed directly to the health of others. It's motivated me to consider donating regularly and to encourage others to do the same.
+                            "
+                            data-popup-image="images/communityFolder/donateblood.jpg">Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/communityFolder/whitegift.jpg" alt="Card Image" class="card-image">
+                <div class="card-body">
+                    <h3 class="card-title">Sto Nino Orphanage White Gift</h3>
+                    <p class="short-description">A meaningful experience create something special for the kids</p>
+                    <button class="read-more-btn"
+                            data-full-text="
+                            I participated in the Sto Nino Orphanage White Gift event from 12:00 PM to 3:00 PM, organized by Ma'am Joy. My role was to make the gift that would be given to the children at the orphanage.
+                            ‎
+                            It was a meaningful experience, with everyone working together to create something special for the kids. The atmosphere was filled with a sense of giving and joy, knowing that our efforts would brighten the day for some children.
+                            ‎
+                            I spent my time crafting a thoughtful gift, trying to make it both useful and enjoyable for the recipients. It was heartwarming to think about the smiles these gifts might bring.
+                            ‎
+                            Because of this activity, I am now more conscious of the impact of giving back, especially to children in need.
+                            "
+                            data-popup-image="images/communityFolder/whitegift_1.jpg">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-modal">
+            <div class="popup-content">
+                <img src="" alt="Popup Image" class="popup-image">
+                <div class="popup-text">
+                    <div id="modal-text"></div>
+                </div>
+                <span class="popup-close">&times;</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+        const popupModal = document.querySelector('.popup-modal');
+        const popupClose = document.querySelector('.popup-close');
+        const modalText = document.getElementById('modal-text');
+        const popupImage = document.querySelector('.popup-image');
+
+        readMoreBtns.forEach((btn) => {
+            btn.addEventListener('click', function() {
+                const fullText = btn.getAttribute('data-full-text');
+                const imageUrl = btn.getAttribute('data-popup-image');
+
+                const paragraphs = fullText.split('\n').map(text => `<p>${text}</p>`).join('');
+                modalText.innerHTML = paragraphs;
+                popupImage.src = imageUrl;
+
+                popupModal.style.display = 'flex';
+            });
+        });
+
+        popupClose.addEventListener('click', function() {
+            popupModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === popupModal) {
+                popupModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
